@@ -1,0 +1,16 @@
+-menu\          import { FiMenu } from "react-icons/fi"
+-close\         import { IoCloseOutline } from "react-icons/io5";
+-receipt\       import { PiReceipt } from "react-icons/pi";
+-creditcard\    import { PiCreditCardLight } from "react-icons/pi";
+-CaretLeft\     import { IoIosArrowBack } from "react-icons/io";
+-CaretRight\    import { IoIosArrowForward } from "react-icons/io";
+-pix\           import { MdPix } from "react-icons/md";
+-minus\         import { FaMinus } from "react-icons/fa6";
+-plus\          import { FaPlus } from "react-icons/fa6";
+-ForkKnife\     import { PiForkKnife } from "react-icons/pi";
+-heart\         import { FaRegHeart } from "react-icons/fa";
+-heartFull\     import { FaHeart } from "react-icons/fa";
+-pencil\        import { PiPencilSimple } from "react-icons/pi";
+-search\        import { IoIosSearch } from "react-icons/io";
+-signOut\       import { PiSignOut } from "react-icons/pi";
+-list\          import { PiListBold } from "react-icons/pi";
