@@ -3,7 +3,9 @@ import { Container } from "./styles";
 export function TagsIngredients({data}) {
     return (
         <Container>
-            {data}
+            <div className="Poppins_100_medium">
+                {data}
+            </div>
         </Container>    
     )
 }

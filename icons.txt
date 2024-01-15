@@ -14,3 +14,4 @@
 -search\        import { IoIosSearch } from "react-icons/io";
 -signOut\       import { PiSignOut } from "react-icons/pi";
 -list\          import { PiListBold } from "react-icons/pi";
+-uploadSimple\  import { PiUploadSimple } from "react-icons/pi";

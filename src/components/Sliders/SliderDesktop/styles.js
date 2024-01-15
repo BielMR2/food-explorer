@@ -13,7 +13,7 @@ export const Container = styled.div`
         font-weight: 500;
         line-height: 140%;
 
-        padding: 0 0 24px 24px;
+        padding: 50px 0 25px 24px;
     }
 
     > div {

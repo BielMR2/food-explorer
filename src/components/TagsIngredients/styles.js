@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: inline;
+    margin: 0 24px 24px 0;
 
-    padding: 4px 8px;
-    border-radius: 5px;
-    margin-right: 24px;
+    > div { 
+        display: inline;
 
-    background-color: ${({ theme }) => theme.COLORS.DARK_1000}
+        border-radius: 5px;
+        padding: 4px 8px;
+
+        background-color: ${({ theme }) => theme.COLORS.DARK_1000}
+    }
+    
 `

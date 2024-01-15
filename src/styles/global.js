@@ -39,7 +39,7 @@ export default createGlobalStyle`
 
     .poppins_100_medium {
         font-family: "Poppins";
-        font-weight: medium;
+        font-weight: 500;
         font-size: 0.875rem;
         line-height: 1.5rem;
         text-decoration: none;
@@ -47,7 +47,7 @@ export default createGlobalStyle`
 
     .poppins_200_medium {
         font-family: "Poppins";
-        font-weight: medium;
+        font-weight: 500;
         font-size: 1.25rem;
         line-height: 1.5rem;
         text-decoration: none;
@@ -64,14 +64,14 @@ export default createGlobalStyle`
     .poppins_300_regular {
         font-family: "Poppins";
         font-weight: normal;
-        font-size: 0.87rem;
-        line-height: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 140%;
         text-decoration: none;
     }
 
     .poppins_400_medium {
         font-family: "Poppins";
-        font-weight: medium;
+        font-weight: 500;
         font-size: 2rem;
         line-height: 140%;
         text-decoration: none;
@@ -79,7 +79,7 @@ export default createGlobalStyle`
 
     .poppins_500_medium {
         font-family: "Poppins";
-        font-weight: medium;
+        font-weight: 500;
         font-size: 2.5rem;
         line-height: 140%;
         text-decoration: none;
@@ -112,7 +112,7 @@ export default createGlobalStyle`
 
     .roboto_small_spaced {
         font-family: "Roboto";
-        font-weight: medium;
+        font-weight: 500;
         font-size: 1rem;
         line-height: 160%;
         text-decoration: none;

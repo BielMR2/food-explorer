@@ -9,12 +9,15 @@ export const Container = styled.div`
 
     > img {
         width: 30px; height: 30px;
-        margin-top: 2px;
     }
 
     > div {
         display: flex;
         flex-direction: column;
+
+        h1 {
+            white-space: nowrap;
+        }
 
         p {
             margin-left: auto;

@@ -1,33 +1,22 @@
-import { useState, useEffect } from "react";
+import { useContext } from "react";
+import { CounterContext } from "../../context/CounterContext"
+
 import { Container } from "./styles";
 
 import { FaMinus, FaPlus } from "react-icons/fa6";
 
 
-export function QuantityControl({ onClick, onDataChange }) {
-    const [count, setCount] = useState(0)
 
-
-    function handleIncrement() {
-        setCount(prevCount => prevCount + 1)
-    }
-
-    function handleDecrement() {
-        if(count > 0){
-            setCount(prevCount => prevCount - 1)
-        }
-    }
-
-    useEffect(() => {
-        onDataChange(count)
-    }, [count])
-
+export function QuantityControl({ onClick, size }) {
+    const { counter, handleIncrement, handleDecrement } = useContext(CounterContext)
 
     return (
         <Container onClick={onClick}>
-            <FaMinus onClick={handleDecrement} />
-            {count}
-            <FaPlus onClick={handleIncrement} />
-        </Container> 
-    )
+            <FaMinus size={size} onClick={handleDecrement} />
+            <div className="roboto_big_bold">
+                {String(counter).padStart(2, '0')}
+            </div>
+            <FaPlus size={size} onClick={handleIncrement} />
+        </Container>    
+    );
 }

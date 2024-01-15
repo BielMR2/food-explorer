@@ -10,113 +10,38 @@ import image from "../../../tmpAssets/prato.png"
 
 const orders=[
     {
+        id: "1",
         image,
         name: "Salada Ravanello",
         description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
         category: "Refeições",
         price: "49.97",
         ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
+        fav: true,
+        count: 1
     },
     {
+        id: "2",
         image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
+        name: "Outro Prato",
+        description: "Descrição do outro prato.",
+        category: "Outra Categoria",
+        price: "29.99",
+        ingredients: ["ingrediente1", "ingrediente2", "ingrediente3"],
+        fav: false,
+        count: 1
     },
     {
+        id: "3",
         image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
-    },{
-        image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
+        name: "Mais um Prato",
+        description: "Descrição do mais um prato.",
+        category: "Mais uma Categoria",
+        price: "39.95",
+        ingredients: ["ingredienteA", "ingredienteB", "ingredienteC"],
+        fav: true,
+        count: 1
     },
-    {
-        image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
-    },
-    {
-        image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
-    },
-    {
-        image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
-    },
-    {
-        image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
-    },
-    {
-        image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
-    },{
-        image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
-    },
-    {
-        image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
-    },
-    {
-        image,
-        name: "Salada Ravanello",
-        description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
-        category: "Refeições",
-        price: "49.97",
-        ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
-        fav: "true"
-    },
-
-
 ]
     
 

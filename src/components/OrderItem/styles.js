@@ -3,6 +3,8 @@ import { DEVICE_BREACKPOINTS } from "../../styles/deviceBreakPoints"
 
 export const Container = styled.div`
     position: relative;
+
+    height: 496px;
     max-width: 19rem;
 
     display: flex;
@@ -24,22 +26,41 @@ export const Container = styled.div`
         }
     }
 
-    > img {
-        width: 11rem; height: 11rem;
+    .openDetails {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 0 auto;
+
+        gap: 15px;
+
+        > img {
+            width: 11rem; height: 11rem;
+        }
+
+        > h1 {
+            color: ${({ theme }) => theme.COLORS.LIGHT_300};
+        }
+
+        > p {
+            color: ${({ theme }) => theme.COLORS.LIGHT_400};
+            text-align: center;
+        }
+
+        > h2 {
+            color: ${({ theme }) => theme.COLORS.CAKE_200}
+        }
     }
 
-    > p {
-        text-align: center;
-    }
-
-    > h2 {
-        color: ${({ theme }) => theme.COLORS.CAKE_200}
-    }
+    
 
     > .buttons {
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        margin-top: auto;
 
         gap: 16px;
     }
@@ -50,25 +71,29 @@ export const Container = styled.div`
 
     @media (max-width: ${DEVICE_BREACKPOINTS.MD}) {
         max-width: 13.12rem;
+        height: auto;
 
         gap: 12px;
 
-        > img {
-            width: 5.5rem; height: 5.5rem;
-        }
+        .openDetails {
+            > img {
+                width: 5.5rem; height: 5.5rem;
+            }
 
-        > h1 {
-            font-size: 0.87rem;
-            text-align: center;
-        }
+            > h1 {
+                font-size: 0.87rem;
+                text-align: center;
+            }
 
-        > p {
-            display: none
-        }
+            > p {
+                display: none
+            }
 
-        > h2 {
-            font-size: 1rem
-        }   
+            > h2 {
+                font-size: 1rem
+            }   
+        }
+        
 
         > .buttons {
             width: 100%;

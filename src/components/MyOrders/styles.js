@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-    min-width:207px;
+    width: 100%;
+    max-height: 56px;
+    max-width: 198px;
 
     display: flex;
     flex-direction: row;
@@ -17,7 +19,13 @@ export const Container = styled.button`
     background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
-    > p {
+    > svg {
+        width: 32px; height: 32px;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
     }
 `

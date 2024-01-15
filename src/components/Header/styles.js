@@ -14,8 +14,23 @@ export const Container = styled.div`
 
     background-color: ${({ theme }) => theme.COLORS.DARK_600};
 
+
+    .space {
+        display: none
+    }
+
     @media (max-width: ${DEVICE_BREACKPOINTS.MD}) {
         padding: 3.5rem 3.84rem 1.5rem;
+        
+        .space {
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    @media (max-width: ${DEVICE_BREACKPOINTS.LG}) {
+        padding: 1.5rem 2rem;
     }
 `
 

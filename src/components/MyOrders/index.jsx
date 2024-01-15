@@ -6,8 +6,11 @@ export function MyOrders({ orders }) {
     return (
         <Container>
             <PiReceipt />
-            <p className="poppins_100_medium" >Meu pedido</p>
-            ( {orders.length} )
+            <p className="poppins_100_medium" >Pedidos</p>
+            <div className="poppins_100_medium">
+                ( {orders.length} )
+            </div>
+            
         </Container>    
     )
 }

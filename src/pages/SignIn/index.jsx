@@ -1,5 +1,5 @@
 import { LogoSign } from "../../components/Logos/LogoSign"
-import { Input } from "../../components/Input"
+import { Input } from "../../components/Inputs/Input"
 import { ButtonTomato100 } from "../../components/Buttons/Button-tomato"
 
 import { Container, StyleLogoSign, Form, Mobile, Desktop } from "./styles"
