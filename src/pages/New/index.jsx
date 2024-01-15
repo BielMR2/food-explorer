@@ -5,9 +5,12 @@ import { ButtonBack } from "../../components/Buttons/ButtonBack"
 import { Input } from "../../components/Inputs/Input";
 import { InputUpload } from "../../components/Inputs/InputUpload";
 import { InputSelect } from "../../components/Inputs/InputSelect";
+import { ButtonTomato400 } from "../../components/Buttons/Button-tomato"
 
 import { Container, Content, Form } from "./styles";
 import { InputTagItem } from "../../components/InputTagItem";
+import { TextInput } from "../../components/Inputs/TextInput";
+import { Section } from "../../components/Section";
 
 export function New() {
     const [avatarFile, setAvatarFile] = useState(null)
@@ -28,23 +31,35 @@ export function New() {
 
                 <Form>
                     <div className="first-row rows">
-                        <InputUpload title="Imagem do prato" setFile={setAvatarFile} />
-                        <Input title="Nome" placeholder="Ex.: Salada Ceasar" />
+                        <Section onlyContent title="Imagem do prato">
+                            <InputUpload setFile={setAvatarFile} />
+                        </Section>
+                        <Section title="Nome">
+                            <Input placeholder="Ex.: Salada Ceasar" />
+                        </Section>
                         <InputSelect title="Categoria" />
                     </div>
 
                     <div className="mid-row rows">
-                        <InputTagItem title="Ingredientes" setTags={setTags} tags={tags} />
-                        <Input title="Price" placeholder="R$ 00,00" />
+                        <Section title="Ingredientes">
+                            <InputTagItem setTags={setTags} tags={tags} />
+                        </Section>
+                        <Section title="Preço">
+                            <Input placeholder="R$ 00,00" />
+                        </Section>
                     </div>
 
-                    {/*
+                    
                     <div className="last-row rows">
-                        <InputUpload title="Imagem do prato" setFile={setAvatarFile} />
-                        <Input title="Nome" placeholder="Ex.: Salada Ceasar" />
-                        <InputSelect title="Categoria" />
+                        <Section title="Descrição">
+                            <TextInput 
+                                placeholder="Fale brevemente sobre o prato, seus ingredientes e composição"
+                            />
+                        </Section>
                     </div> 
-                    */}
+
+                    <ButtonTomato400 title="Salvar alterações" />
+                   
                 </Form>
             </Content>
         </Container>    

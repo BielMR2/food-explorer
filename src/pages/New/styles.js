@@ -29,8 +29,20 @@ export const Form = styled.form`
         width: 50%;
     }
 
-    .mid-row > div:nth-child(2) {
-        width: 20%;
+    .mid-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+        > div:nth-child(2) {
+            width: 20%;
+        }
+    }
+
+
+    > button {
+        width: 30%;
+        max-width: 250px
     }
 
     
