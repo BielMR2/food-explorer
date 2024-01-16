@@ -8,8 +8,8 @@ export const Container = styled.button`
     flex-direction: row;
 
     > svg {
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
 
         color: ${({ theme }) => theme.COLORS.LIGHT_100}
     }

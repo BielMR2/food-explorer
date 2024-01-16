@@ -5,15 +5,15 @@ export const Container = styled.div`
         color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
         font-family: Poppins;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-style: normal;
         font-weight: 500;
         line-height: 140%;
 
-        padding: 0 0 24px 24px;
+        padding: 0 0 1.5rem 1.5rem;
     }
 
     > div {
-        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
     }
 `

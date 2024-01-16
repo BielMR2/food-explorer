@@ -8,7 +8,7 @@ export const Container = styled.div`
 
     max-height: 6.5rem;
     
-    gap: 32px;
+    gap: 2rem;
 
     padding: 1.5rem 7.68rem;
 
@@ -24,8 +24,8 @@ export const Container = styled.div`
         
         .space {
             display: block;
-            width: 24px;
-            height: 24px;
+            width: 1.5rem;
+            height: 1.5rem;
         }
     }
 
@@ -38,8 +38,8 @@ export const Menu = styled.div`
     display: none;
 
     > svg {
-        width: 24px;
-        height: 24px;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     @media (max-width: ${DEVICE_BREACKPOINTS.MD}) {
@@ -62,16 +62,16 @@ export const Functions = styled.div`
 export const Menu2 = styled.div`
     display: none;
     
-    width: 24px;
-    height: 18px;
+    width: 1.5rem;
+    height: 1.12rem;
 
     position: relative;
 
     top: -5px;
     
     > svg {
-        width: 24px;
-        height: 18px;
+        width: 1.5rem;
+        height: 1.12rem;
     }
 
     @media (max-width: ${DEVICE_BREACKPOINTS.MD}) {

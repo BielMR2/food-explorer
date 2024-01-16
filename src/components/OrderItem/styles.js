@@ -4,7 +4,7 @@ import { DEVICE_BREACKPOINTS } from "../../styles/deviceBreakPoints"
 export const Container = styled.div`
     position: relative;
 
-    height: 496px;
+    height: 31rem;
     max-width: 19rem;
 
     display: flex;
@@ -14,7 +14,7 @@ export const Container = styled.div`
     padding: 1.5rem;
     margin: 0 auto;
 
-    gap: 15px;
+    gap: 0.93rem;
 
     > .heart {
         position: absolute;
@@ -33,7 +33,7 @@ export const Container = styled.div`
 
         margin: 0 auto;
 
-        gap: 15px;
+        gap: 0.93rem;
 
         > img {
             width: 11rem; height: 11rem;
@@ -62,7 +62,7 @@ export const Container = styled.div`
 
         margin-top: auto;
 
-        gap: 16px;
+        gap: 1rem;
     }
 
     @media (max-width: ${DEVICE_BREACKPOINTS.LG}) {
@@ -73,7 +73,7 @@ export const Container = styled.div`
         max-width: 13.12rem;
         height: auto;
 
-        gap: 12px;
+        gap: 0.75rem;
 
         .openDetails {
             > img {
@@ -101,7 +101,7 @@ export const Container = styled.div`
             align-items: center;
 
             > button {
-                padding: 7px 24px;
+                padding: 0.4375rem 1.5rem;
             }
         }
     }

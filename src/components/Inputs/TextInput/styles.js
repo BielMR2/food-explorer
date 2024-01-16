@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.textarea`
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
 
-    padding: 14px;
+    padding: 0.87rem;
     resize: none;
 
     border: none;

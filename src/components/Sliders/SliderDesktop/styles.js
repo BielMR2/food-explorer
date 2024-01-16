@@ -8,12 +8,12 @@ export const Container = styled.div`
         color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
         font-family: Poppins;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-style: normal;
         font-weight: 500;
         line-height: 140%;
 
-        padding: 50px 0 25px 24px;
+        padding: 3.125rem 0 1.5625rem 1.5rem;
     }
 
     > div {
@@ -23,8 +23,8 @@ export const Container = styled.div`
     .styleArrows {
         > svg {
             pointer-events: all;
-            width: 30px;
-            height: 30px;
+            width: 2.5rem;
+            height: 2.5rem;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -46,7 +46,7 @@ export const Container = styled.div`
 
 
     .arrow--left {
-        left: -7px;
+        left: -0.4375rem;
     }
 
     .arrow--right {

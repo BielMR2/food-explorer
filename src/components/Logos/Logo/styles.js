@@ -10,7 +10,7 @@ export const Container = styled(Link)`
     gap: 10px;
 
     > img {
-        width: 30px; height: 30px;
+        width: 1.87rem; height: 1.87rem;
     }
 
     p {
@@ -22,7 +22,7 @@ export const Container = styled(Link)`
         gap: 8px;
 
         > img {
-            width: 25px; height: 25px;
+            width: 1.56rem; height: 1.56rem;
         }
 
         > p {

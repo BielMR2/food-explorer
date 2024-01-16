@@ -15,15 +15,15 @@ export const Container = styled.div`
         
         display: flex;
         flex-direction: row;
-        gap: 14px;
+        gap: 0.77rem;
 
-        padding: 16px;
+        padding: 1rem;
 
         background-color: ${({ theme }) => theme.COLORS.DARK_800};
         border-radius: 5px;
 
         svg {
-        width: 24px; height: 24px;
+        width: 1.5rem; height: 1.5rem;
     }
 
         input {

@@ -4,18 +4,18 @@ export const Container = styled.div`
     display: flex;
 
     > svg {
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
     }
 
     > div {
         position: relative;
 
-        left: -14px;
-        top: -5px;
+        left: -0.875rem;
+        top: -0.3125rem;
 
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
 
         background-color: ${({ theme }) => theme.COLORS.TOMATO_200};
         border-radius: 50%;

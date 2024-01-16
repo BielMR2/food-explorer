@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.button`
     width: 100%;
-    max-height: 56px;
-    max-width: 198px;
+    max-height: 3.5rem;
+    max-width: 12.37rem;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
 
-    padding: 12px 32px;
+    padding: 0.75rem 2rem;
     gap: 8px;
 
     border: none;
@@ -20,7 +20,7 @@ export const Container = styled.button`
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
     > svg {
-        width: 32px; height: 32px;
+        width: 2rem; height: 2rem;
     }
 
     > div {

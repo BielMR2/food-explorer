@@ -8,7 +8,7 @@ export const Container = styled.div`
     select {
         color: ${({ theme }) => theme.COLORS.LIGHT_400};
 
-        padding: 16px;
+        padding: 1rem;
 
         border: none;
         border-radius: 8px;

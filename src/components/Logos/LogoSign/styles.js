@@ -10,20 +10,20 @@ export const Container = styled.div`
     gap: 10px;
 
     > img {
-        width: 50px; height: 50px;
+        width: 3.12rem; height: 3.12rem;
     }
 
     > p {
-        font-size: 42px
+        font-size: 2.62rem
     }
 
     @media (max-width: ${DEVICE_BREACKPOINTS.LG}) {
         > img {
-            width: 33px; height: 33px;
+            width: 2rem; height: 2rem;
         }
 
         > p {
-            font-size: 29.5px
+            font-size: 1.843rem
         }
     }
 
@@ -31,11 +31,11 @@ export const Container = styled.div`
         gap: 8px;
 
         > img {
-            width: 43px; height: 43px;
+            width: 2.68rem; height: 2.68rem;
         }
 
         > p {
-            font-size: 37.2px;
+            font-size: 2.325rem;
         }
     }
 
@@ -43,11 +43,11 @@ export const Container = styled.div`
         gap: 8px;
 
         > img {
-            width: 23px; height: 23px;
+            width: 1.437rem; height: 1.437rem;
         }
 
         > p {
-            font-size: 27.2px;
+            font-size: 1.7rem;
         }
     }
 `

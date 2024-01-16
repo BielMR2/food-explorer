@@ -9,7 +9,7 @@ export const Container = styled.div`
     border: ${({ theme, $isNew }) => $isNew ? `2px dashed ${theme.COLORS.LIGHT_500}` : `2px solid ${theme.COLORS.LIGHT_500}` };
     border-radius: 10px;
 
-    padding: 0 16px;
+    padding: 0 1rem;
 
     > input {
         background-color: transparent;

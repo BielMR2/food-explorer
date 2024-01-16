@@ -14,7 +14,7 @@ export const Container = styled.div`
     
         display: flex;
         flex-wrap: wrap;
-        gap: 16px;
+        gap: 1rem;
     
         background: ${({ theme }) => theme.COLORS.DARK_800};
     }

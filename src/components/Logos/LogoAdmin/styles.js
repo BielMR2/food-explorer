@@ -8,7 +8,7 @@ export const Container = styled.div`
     gap: 10px;
 
     > img {
-        width: 30px; height: 30px;
+        width: 1.87rem; height: 1.87rem;
     }
 
     > div {
@@ -29,7 +29,7 @@ export const Container = styled.div`
         gap: 8px;
 
         > img {
-            width: 25px; height: 25px;
+            width: 1.56rem; height: 1.56rem;
         }
 
         div {
@@ -38,11 +38,11 @@ export const Container = styled.div`
             align-items: center;
 
             h1 {
-            font-size: 21px;
+                font-size: 1.31rem;
             }
 
             p {
-                font-size: 21px;
+                font-size: 1.31rem;
             }
         }
 

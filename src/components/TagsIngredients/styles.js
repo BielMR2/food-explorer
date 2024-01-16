@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin: 0 24px 24px 0;
+    margin: 0 1.5rem 1.5rem 0;
 
     > div { 
         display: inline;
