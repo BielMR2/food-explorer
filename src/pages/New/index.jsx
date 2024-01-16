@@ -6,6 +6,7 @@ import { Input } from "../../components/Inputs/Input";
 import { InputUpload } from "../../components/Inputs/InputUpload";
 import { InputSelect } from "../../components/Inputs/InputSelect";
 import { ButtonTomato400 } from "../../components/Buttons/Button-tomato"
+import { Footer } from "../../components/Footer"
 
 import { Container, Content, Form } from "./styles";
 import { InputTagItem } from "../../components/InputTagItem";
@@ -27,11 +28,12 @@ export function New() {
             <Content>
                 <ButtonBack />
 
-                <h1 className="poppins_400_medium">Adicionar prato</h1>
+                <h1 className="title-desktop poppins_400_medium">Adicionar prato</h1>
+                <h1 className="title-mobile poppins_400_medium">Novo prato</h1>
 
                 <Form>
                     <div className="first-row rows">
-                        <Section onlyContent title="Imagem do prato">
+                        <Section maxcontent title="Imagem do prato">
                             <InputUpload setFile={setAvatarFile} />
                         </Section>
                         <Section title="Nome">
@@ -62,6 +64,8 @@ export function New() {
                    
                 </Form>
             </Content>
+
+            <Footer />
         </Container>    
     )
 }

@@ -1,8 +1,8 @@
 import { Container } from "./styles";
 
-export function Section({ title, children, onlyContent }) {
+export function Section({ title, children, maxcontent }) {
     return(
-        <Container onlyContent={onlyContent}>
+        <Container $maxcontent={maxcontent}>
             <h1 className="roboto_small_regular" >{title}</h1>
             {children}
         </Container>    
