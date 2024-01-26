@@ -6,7 +6,11 @@ export function Input({ title, icon: Icon, type = "text", ...rest }) {
             {title && <p className="roboto_small_regular">{title}</p>}
             <div>
                 {Icon && <Icon />}
-                <input type={type} className="roboto_small_regular" {...rest} />
+                <input 
+                    type={type} 
+                    className="roboto_small_regular" 
+                    {...rest} 
+                />
             </div>
         </Container>    
     )

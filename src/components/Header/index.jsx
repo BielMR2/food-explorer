@@ -1,3 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
+import { useAuth } from "../../hooks/auth";
+
 import { IoIosSearch } from "react-icons/io";
 import { PiListBold } from "react-icons/pi";
 
@@ -11,28 +15,36 @@ import { MyOrdersIcon } from "../MyOrdersIcon";
 
 import { Container, Menu, Functions, Menu2 } from "./styles"
  
-export function Header({ data, admin }) {
+export function Header({ data, onChange, onOpenMenu, admin, noNeedSpace }) {
+    const { signOut } = useAuth()
+    const navigate = useNavigate()
+
+    function handleSignOut() {
+        navigate("/")
+        signOut()
+    }
     
 
     return (
         <Container>
             <Menu>
-                <PiListBold />
+                <PiListBold onClick={onOpenMenu} />
             </Menu>
 
             {admin ? <LogoAdmin /> : <Logo />}
 
-            {admin && <div className="space" />}
+            {admin && !noNeedSpace && <div className="space" />}
 
             <Functions>
                 <Input 
                     icon={IoIosSearch}
                     placeholder="Busque por pratos ou ingredientes"
+                    onChange={onChange}
                 />
 
                 {admin ? <NewOrders title="Novo prato" /> : <MyOrders orders={["pedido1", "pedido2", "pedido3"]}/>}
 
-                <ButtonExit onClick={() => {console.log("111")}} />
+                <ButtonExit onClick={handleSignOut} />
             </Functions>
             
             {data && 

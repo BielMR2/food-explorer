@@ -9,7 +9,10 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    white-space: nowrap;
+
     padding: 1.5rem 7.687rem;
+    margin-top: auto;
     
     background-color: ${({ theme }) => theme.COLORS.DARK_600};
 

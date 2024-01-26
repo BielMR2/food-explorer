@@ -5,11 +5,11 @@ import { OrderItem } from '../../OrderItem';
 import { Container } from "./styles";
 
 
-export function SliderMobile({ orders, title }) {
+export function SliderContentMobile({ content }) {
     const [sliderRef] = useKeenSlider({
         mode: "free",
         slides: {
-          perView: 4,
+          perView: 3,
           spacing: 0,
         },
         breakpoints: {
@@ -24,15 +24,13 @@ export function SliderMobile({ orders, title }) {
                 },
             },
           },
-        
       })
-
     return (
         <Container>
-            <h1>{title}</h1>
+            <h1>{content.category}</h1>
 
             <div ref={sliderRef} className="keen-slider">            
-                {orders.map((order, index) => (
+                {content.orders.map((order, index) => (
                     <div className="keen-slider__slide" key={index}>
                         <OrderItem order={order} />
                     </div>
@@ -42,12 +40,3 @@ export function SliderMobile({ orders, title }) {
         
     )
 }
-
-
-{/*
-
-{orders.map((order, index) => (
-    <OrderItem key={index} order={order} />
- ))}
-
-*/}

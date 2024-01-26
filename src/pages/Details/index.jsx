@@ -1,25 +1,28 @@
 import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
+import { useAuth } from "../../hooks/auth"
 import { CounterProvider, CounterContext } from "../../context/CounterContext";
+
+import { PiReceipt } from "react-icons/pi";
 
 import { Header } from "../../components/Header";
 import { ButtonBack } from "../../components/Buttons/ButtonBack";
 import { TagsIngredients } from "../../components/TagsIngredients"
 import { QuantityControl } from "../../components/QuantityControl";
+import { NewOrders } from "../../components/NewOrders";
 import { ButtonTomato100 } from "../../components/Buttons/Button-tomato"
 import { Footer } from "../../components/Footer";
 
-import { Container, Content, Main } from "./styles";
+import { Container, Content, Main, Controlls } from "./styles";
 
 
 
 import image from "../../../tmpAssets/prato.png"
-const user = {
-    role: "admin"
-}
+
 
 export function Details() {
+    const { user } = useAuth()
     const navigate = useNavigate()
 
     const { counter } = useContext(CounterContext)
@@ -39,10 +42,11 @@ export function Details() {
             description: "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.",
             category: "Refeições",
             price: "49.97",
-            ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "romate"],
+            ingredients: ["alface", "cebola", "pão naan", "pepino", "rabanete", "tomate"],
             fav: true,
         })
     }, [])
+
 
 
 {/*   ADICIONAR O IMAGE AQUI, QUANDO FAZER A REQUISIÇÃO NO BACK-END   */}
@@ -61,7 +65,7 @@ export function Details() {
                 <Main>
                     <img src={image} alt="" />
 
-                    <div>
+                    <div className="details">
                         <h1 className="poppins_500_medium">{name}</h1>
                         <p className="poppins_300_regular">{description}</p>
 
@@ -72,10 +76,13 @@ export function Details() {
                         </div>
                         
 
-                        <div className="controlls">
+                        <Controlls>
                             <QuantityControl size="24px" order={order} />
-                            <ButtonTomato100 title={`incluir ∙ R$ ${(price * counter).toFixed(2)}`} />
-                        </div>
+
+                            {/*  Mobile / Desktop */}
+                            <NewOrders className="button-mobile" icon={PiReceipt} title={`Pedir ∙ R$ ${(price * counter).toFixed(2)}`} />
+                            <ButtonTomato100 className="button-desktop" title={`incluir ∙ R$ ${(price * counter).toFixed(2)}`} />
+                        </Controlls>
 
                     </div> 
                 </Main>

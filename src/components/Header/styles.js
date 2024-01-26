@@ -19,18 +19,18 @@ export const Container = styled.div`
         display: none
     }
 
+    @media (max-width: ${DEVICE_BREACKPOINTS.LG}) {
+        padding: 1.5rem 2rem;
+    }
+
     @media (max-width: ${DEVICE_BREACKPOINTS.MD}) {
-        padding: 3.5rem 3.84rem 1.5rem;
+        padding: 3.5rem 1.75rem 1.5rem;
         
         .space {
             display: block;
             width: 1.5rem;
             height: 1.5rem;
         }
-    }
-
-    @media (max-width: ${DEVICE_BREACKPOINTS.LG}) {
-        padding: 1.5rem 2rem;
     }
 `
 

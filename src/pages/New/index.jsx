@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { Header } from "../../components/Header"
 import { ButtonBack } from "../../components/Buttons/ButtonBack"
@@ -16,6 +17,11 @@ import { Section } from "../../components/Section";
 export function New() {
     const [avatarFile, setAvatarFile] = useState(null)
     const [tags, setTags] = useState([])
+    const navigate = useNavigate()
+
+    function handleBack() {
+        navigate(-1)
+    }
 
     // useEffect(() => {
     //     console.log("avatar modificado")
@@ -26,7 +32,7 @@ export function New() {
             <Header admin />
 
             <Content>
-                <ButtonBack />
+                <ButtonBack onClick={handleBack} />
 
                 <h1 className="title-desktop poppins_400_medium">Adicionar prato</h1>
                 <h1 className="title-mobile poppins_400_medium">Novo prato</h1>
@@ -60,7 +66,7 @@ export function New() {
                         </Section>
                     </div> 
 
-                    <ButtonTomato400 title="Salvar alterações" />
+                    <ButtonTomato400 title="Salvar alterações" onKeyPress={(e) => console.log(e.key.value)} />
                    
                 </Form>
             </Content>

@@ -46,10 +46,11 @@ export const Container = styled.div`
 
 
     .arrow--left {
-        left: -0.4375rem;
+        left: -3rem;
+        top: 1rem;
     }
 
     .arrow--right {
-        right: 0px;
+        right: -3rem;
     }
 `

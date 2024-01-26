@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { DEVICE_BREACKPOINTS } from "../../../styles/deviceBreakPoints"
 
-export const Container = styled.div`
+export const Container = styled(Link)`
     min-width: 11.12rem;
 
     display: flex;
@@ -16,6 +17,7 @@ export const Container = styled.div`
         flex-direction: column;
 
         h1 {
+            color: ${({ theme }) => theme.COLORS.LIGHT_100};
             white-space: nowrap;
         }
 

@@ -4,7 +4,7 @@ import logosvg from "../../../assets/logo.svg"
  
 export function LogoAdmin() {
     return (
-        <Container>
+        <Container to="/">
             <img src={logosvg} />
 
             <div>

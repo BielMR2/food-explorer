@@ -35,32 +35,43 @@ export const Container = styled.div`
 
         gap: 0.93rem;
 
-        > img {
+        > img, > .imagePlaceholder {
             width: 11rem; height: 11rem;
+            border-radius: 50%;
+        }
+
+        > .imagePlaceholder {
+            background: url(https://encurtador.com.br/jvKY8);
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
         }
 
         > h1 {
             color: ${({ theme }) => theme.COLORS.LIGHT_300};
         }
 
-        > p {
+        p {
             color: ${({ theme }) => theme.COLORS.LIGHT_400};
             text-align: center;
-        }
 
-        > h2 {
-            color: ${({ theme }) => theme.COLORS.CAKE_200}
-        }
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }   
     }
 
-    
+    > h2 {
+        margin-top: auto;
+        color: ${({ theme }) => theme.COLORS.CAKE_200};
+    }
 
     > .buttons {
         display: flex;
         flex-direction: row;
         align-items: center;
 
-        margin-top: auto;
 
         gap: 1rem;
     }
@@ -71,12 +82,12 @@ export const Container = styled.div`
 
     @media (max-width: ${DEVICE_BREACKPOINTS.MD}) {
         max-width: 13.12rem;
-        height: auto;
+        height: max-content;
 
         gap: 0.75rem;
 
         .openDetails {
-            > img {
+            > img, .imagePlaceholder {
                 width: 5.5rem; height: 5.5rem;
             }
 
@@ -89,10 +100,13 @@ export const Container = styled.div`
                 display: none
             }
 
-            > h2 {
-                font-size: 1rem
-            }   
+            
         }
+
+        h2 {
+            font-size: 1rem;
+            margin-top: 0;
+        }   
         
 
         > .buttons {

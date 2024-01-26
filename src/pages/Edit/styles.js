@@ -37,7 +37,7 @@ export const Content = styled.div`
     }
 `
 
-export const Form = styled.form`
+export const Form = styled.div`
     display: flex;
     flex-direction: column;
     gap: 32px;
